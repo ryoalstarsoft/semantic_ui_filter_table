@@ -1,0 +1,49 @@
+{
+  "name": "React-Semantic-UI-Sortable-Table-Example",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gges5110/React-Semantic-UI-Sortable-Table-Example.git"
+  },
+  "license": "MIT",
+  "author": "Gerry Wu",
+  "main": "server/server.js",
+  "scripts": {
+    "build": "react-scripts build",
+    "coverage": "react-scripts test --env=jsdom --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
+    "eject": "react-scripts eject",
+    "now-build": "npm run build && mv build dist",
+    "start": "react-scripts start",
+    "start:server": "node server/server.js",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "express": "^4.16.4",
+    "json-server": "^0.14.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "semantic-ui-react": "^0.83.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "enzyme-to-json": "^3.3.4",
+    "fetch-mock": "^7.2.5",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.6.0",
+    "react-scripts": "^2.1.3"
+  },
+  "engines": {
+    "node": "9.2.0"
+  },
+  "proxy": "http://localhost:4000/"
+}
